@@ -19,6 +19,7 @@ for (i = 0; i < 20; i ++) {
   const age = Math.floor(Math.random() * 60) + 18;
   const email = firstName + '.' + lastName +'@gmail.com';
   const corrMail = email.toLowerCase();
+  const phone = Math.floor(100000000 + Math.random() * 900000000);
 
   const person = {
     gender,
@@ -26,6 +27,7 @@ for (i = 0; i < 20; i ++) {
     lastName,
     age,
     corrMail,
+    phone,
   };
 
   people.push(person)
